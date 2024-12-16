@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "elocindev.deathknights.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"plugin": "elocindev.deathknights.mixin.DeathKnightsPlugin",
+	"mixins": [
+		"entity.attribute.LivingAttributeApplyMixin",
+		"entity.effect_logic.LivingEffectModifiersMixin"
+	],
+	"client": [
+		"client.animation.AnimationSpeedPatcherMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

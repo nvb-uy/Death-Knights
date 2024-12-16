@@ -1,4 +1,4 @@
 {
-  "example_mod.configuration.client": "client",
-  "example_mod.configuration.example": "example"
+  "death_knights.configuration.client": "client",
+  "death_knights.configuration.example": "example"
 }

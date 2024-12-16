@@ -1,38 +1,40 @@
 {
 	"schemaVersion": 1,
-	"id": "${id}",
-	"name": "${display_name}",
-	"version": "${modversion}",
-	"description": "${description}",
+	"id": "death_knights",
+	"version": "${version}",
+	"name": "Death Knights",
+	"description": "Embrace darkness and become a Death Knight! An RPG Series mod inspired by World of Warcraft.",
 	"authors": [
-		"${author}"
+		"ElocinDev"
 	],
 	"contact": {
-		"sources": "https://github.com/${github}/${name}",
-		"issues": "https://github.com/${github}/${name}/issues"
+		"homepage": "https://rpg.prominence.wiki/mod/death-knights",
+		"sources": "https://github.com/nvb-uy/Death_Knights"
 	},
-	"license": "${license}",
-	"icon": "assets/${id}/logo.png",
+	"license": "All Rights Reserved",
+	"icon": "assets/death_knights/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"${group}.${namespace}.${name}"
+			"elocindev.deathknights.DeathKnights"
 		],
 		"client": [
-			"${group}.${namespace}.${name}"
-		],
-		"fabric-datagen": [
-			"${group}.${namespace}.foundation.data.${name}Datagen"
+			"elocindev.deathknights.DeathKnightsClient"
 		]
 	},
 	"mixins": [
-		"${id}.mixins.json"
+		"death_knights.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.0",
+		"fabricloader": ">=0.14.0",
 		"minecraft": "${mc}",
+		"java": ">=17",
 		"fabric-api": "*",
+		"player-animator": "*",
+		"spell_engine": "*",
 		"necronomicon": ">=1.6.0"
 	},
-	"accessWidener": "${id}.accesswidener"
+	"suggests": {
+		"bettercombat": "*"
+	}
 }

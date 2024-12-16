@@ -6,6 +6,23 @@ val templateSettings = object : BlahajSettings {
 	override val depsHandler: BlahajDependencyHandler get() = object : BlahajDependencyHandler {
 		override fun addGlobal(mod : ModData, deps: DependencyHandler) {
 			deps.modImplementation("maven.modrinth:necronomicon:${project.property("deps.necronomicon_version")}")
+
+			// Spell Engine Dependencies
+			deps.modImplementation("maven.modrinth:spell-power:${project.property("deps.spellpower_version")}-fabric")
+			deps.modImplementation("maven.modrinth:spell-engine:${project.property("deps.spellengine_version")}-fabric")
+			deps.modImplementation("maven.modrinth:runes:${project.property("deps.runes_version")}-fabric")
+			deps.modImplementation("maven.modrinth:cloth-config:${project.property("deps.clothconfig_version")}+fabric")
+			deps.modImplementation("maven.modrinth:playeranimator:${project.property("deps.playeranimator_version")}-fabric")
+			deps.modCompileOnly("maven.modrinth:trinkets:${project.property("deps.trinkets_version")}-fabric")
+			deps.modImplementation("maven.modrinth:azurelib-armor:${project.property("deps.azurelibarmor_version")}-fabric")
+			deps.implementation("com.github.ZsoltMolnarrr:TinyConfig:${project.property("deps.tiny_config_version")}")
+
+			// Optional/Compat mod dependencies
+			deps.modImplementation("maven.modrinth:better-combat:${project.property("deps.bettercombat_version")}-fabric")
+			deps.modImplementation("maven.modrinth:betterend:${project.property("deps.betterend_version")}-fabric")
+			deps.modImplementation("maven.modrinth:betternether:${project.property("deps.betternether_version")}-fabric")
+			deps.modRuntimeOnly("maven.modrinth:bclib:${project.property("deps.bclib_version")}-fabric")
+			deps.modImplementation("maven.modrinth:rogues-and-warriors:${project.property("deps.warriors_version")}-fabric")
 		}
 
 		override fun addFabric(mod : ModData, deps: DependencyHandler) {
