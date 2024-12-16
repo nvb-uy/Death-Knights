@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "death_knights",
-	"version": "${version}",
+	"version": "${modversion}",
 	"name": "Death Knights",
 	"description": "Embrace darkness and become a Death Knight! An RPG Series mod inspired by World of Warcraft.",
 	"authors": [
