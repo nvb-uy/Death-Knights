@@ -5,12 +5,12 @@ import com.google.common.collect.Multimap;
 
 import elocindev.deathknights.client.render.armor.TieredArmorRenderer;
 
-//? if ==1.20.1 {
+//? if
 import mod.azure.azurelibarmor.animatable.GeoItem;
 import mod.azure.azurelibarmor.animatable.client.RenderProvider;
 import mod.azure.azurelibarmor.renderer.GeoArmorRenderer;
 import mod.azure.azurelibarmor.util.AzureLibUtil;
-//? } else {
+//?} else {
 /*import mod.azure.azurelibarmor.common.api.common.animatable.GeoItem;
 import mod.azure.azurelibarmor.common.internal.client.RenderProvider;
 import mod.azure.azurelibarmor.common.api.client.renderer.GeoArmorRenderer;
